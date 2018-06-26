@@ -1,0 +1,14 @@
+<scroll-view>
+  <image class="poster" mode="widthFix" src="{{detail.images.large}}"></image>
+  <view class='poster_title'><text>{{detail.title}}</text><text class="poster_year">({{detail.year}})</text></view> 
+  <view class='poster_body'>
+  <view><text>豆瓣评分:</text><text class='rate'>{{detail.rating.average}}</text></view>
+  <view><text>导演:</text><text class="content" wx:for="{{detail.directors}}" wx:key="{{index}}">{{item.name}}<text hidden='{{index==detail.directors.length-1}}'>/</text></text></view>
+  <view><text>制片国家/地区:</text><text class="content" wx:for="{{detail.countries}}" wx:key="{{index}}">{{item}}<text hidden='{{index==detail.countries.length-1}}'>/</text></text></view>
+  <view><text>主演:</text><text class="content" wx:for="{{detail.casts}}" wx:key="{{index}}">{{item.name}}<text hidden='{{index==detail.casts.length-1}}'>/</text></text></view>
+  <view><text>类型:</text><text class="content" wx:for="{{detail.genres}}" wx:key="{{index}}">{{item}}<text hidden='{{index==detail.genres.length-1}}'>/</text></text></view>
+  <view><text>又名:</text><text class="content" wx:for="{{detail.aka}}" wx:key="{{index}}">{{item}}<text hidden='{{index==detail.aka.length-1}}'>/</text></text></view>
+  <view class='intro'><text>剧情简介...</text></view>
+  <view class='summary'><text>{{detail.summary}}</text></view>
+  </view>
+</scroll-view>

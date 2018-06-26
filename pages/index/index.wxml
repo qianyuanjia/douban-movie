@@ -1,0 +1,17 @@
+<view class='view-header'>
+  <text class='{{textClass}}'>{{msg}}</text>
+</view>
+<scroll-view>
+  <navigator wx:for="{{movies.subjects}}" wx:for-item='movie' wx:key="{{index}}" url="../movie/movie?id={{movie.id}}">
+     <view class='movie-item'>
+    <image src="{{movie.images.small}}" mode='widthFix'></image>
+     <view class='movie-info'>
+      <view class='title_line'><text class='title'>{{movie.title}} {{movie.year}}</text><text class='rate'>{{movie.rating.average}}</text></view>
+      <view>
+        <text wx:for="{{movie.genres}}" wx:for-index="g_idx" wx:key="{{g_idx}}" class='type'>{{item}} </text>
+      </view>
+      <view><text wx:for="{{movie.directors}}" wx:for-index="d_idx" wx:key="{{d_idx}}" class='direct'>{{item.name}} </text></view>
+    </view> 
+  </view>
+  </navigator>
+</scroll-view>

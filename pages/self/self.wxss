@@ -1,0 +1,4 @@
+.self{
+  padding: 10px;
+  text-indent: 2em;
+}

@@ -1,0 +1,23 @@
+.poster_title{
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+.poster_year{
+  color: red;
+}
+.poster_body{
+  padding: 10px;
+  font-size: 14px;
+  color: #666;
+}
+.content{
+  color: skyblue;
+}
+.summary{
+  color: black;
+  text-indent: 2em;
+}
+.intro{
+  font-size: 18px;
+}

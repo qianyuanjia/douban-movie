@@ -1,0 +1,52 @@
+page{
+  font-family: "Microsoft YaHei";
+}
+.view-header{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  padding: 20rpx 60rpx;
+}
+.view-header text{
+  font-size: 20px;
+  color: #ccc;
+}
+.view-header .text-black{
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+.movie-item{
+  display: flex;
+  height:200rpx;
+  border-bottom:1px solid #ccc;
+  overflow: hidden;
+}
+.movie-item image{
+  flex: 1;
+}
+.movie-item .movie-info{
+  flex: 3;
+  padding:10px;
+}
+.movie-item .title{
+  color:#000;
+}
+.movie-item .type{
+  font-size: 13px;
+  color: #ccc;
+}
+.movie-item .direct{
+  font-size: 14px;
+  color: #999;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.title_line{
+  display: flex;
+  justify-content: space-between;
+}
+.rate{
+  color: red;
+}
